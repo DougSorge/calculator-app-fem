@@ -1,0 +1,65 @@
+// Variables 
+// Theme 1
+$color-main-bg-1: #3a4764;
+$color-keypad-bg-1: #232c43;
+$color-display-bg-1: #182034;
+// buttons
+$color-reset-del-bg-1: #637097;
+$color-blue-shadow-1: #404e72;
+$color-toggle-equal-1: #d03f2f;
+$color-toggle-equal-shadow-1: #93261a;
+$color-numbtns-1: #eae3dc;
+$color-gray-shadow-1: #b4a597;
+// text
+$color-numbtns-font-1: #444b5a;
+$color-display-font-1: #ffffff;
+
+// Theme 2
+$color-main-bg-2: #e6e6e6;
+$color-keypad-bg-2: #d03f2f;
+$color-display-bg-2: #ededed;
+// btns
+$color-res-del-bg-2: #377f86;
+$color-res-del-shadow-2: #1b5f65;
+$color-toggle-equal-2: #ca5502;
+$color-toggle-equal-shadow-2: #893901;
+$color-numbtns-2: #e5e4e1;
+$color-numbtns-shadow-2: #a69d91;
+// text
+$color-numbtns-font-2: #35352c;
+$color-display-font-2: #ffffff;
+
+// Theme 3
+$color-main-bg-3: #160628;
+$color-keypad-bg-3: #d1cccc;
+$color-display-bg-3: #1d0934;
+// buttons
+$color-res-del-bg-3: #58077d;
+$color-res-del-shadow-3: #bc15f4;
+$color-toggle-equal-3: #00e0d1;
+$color-toggle-equal-shadow-3: #6cf9f2;
+$color-numbtns-3: #341c4f;
+$color-numbtns-shadow-3: #871c9c;
+// Text
+$color-numbtns-font-3: #ffe53d;
+$color-equal-font-3: #1b2428;
+$color-res-del-font-3: #ffffff;
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}

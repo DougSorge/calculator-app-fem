@@ -1,0 +1,103 @@
+.num-pad {
+  margin-top: 3rem;
+
+  .num-pad-btns {
+    flex-basis: 80%;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: $color-keypad-bg-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btnRow {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      .btn {
+        padding: 1.5rem;
+        position: relative;
+        border: none;
+        width: 20%;
+        border-radius: 10px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: "Spartan", sans-serif;
+        box-shadow: 0 3px $color-numbtns-shadow-1;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-3px);
+          font-size: 2.8rem;
+
+          &::after {
+            transform: scaleX(1.1) scaleY(1.3);
+            opacity: 0;
+          }
+        }
+
+        .btn:active,
+        .btn:focus {
+          outline: none;
+          transform: translateY(0);
+        }
+      }
+
+      .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        transition: all 0.4s;
+        background-color: $color-numbtns-1;
+      }
+
+      .btn-wide {
+        width: 45%;
+      }
+
+      #del,
+      #reset {
+        font-size: 1.5rem;
+        background-color: $color-res-del-bg-1;
+        box-shadow: 0 3px $color-res-del-shadow-1;
+        color: white;
+
+        &:hover {
+          font-size: 1.7rem;
+        }
+
+        &::after {
+          background-color: $color-res-del-bg-1;
+        }
+      }
+
+      #equal {
+        background-color: $color-toggle-equal-1;
+        box-shadow: 0 3px $color-toggle-equal-shadow-1;
+        color: white;
+
+        &::after {
+          background-color: $color-toggle-equal-1;
+        }
+      }
+
+      .numBtn {
+        background-color: $color-numbtns-1;
+        color: $color-numbtns-font-1;
+
+        &::after {
+          background-color: $color-numbtns-1;
+        }
+      }
+    }
+  }
+}

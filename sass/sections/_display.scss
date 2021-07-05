@@ -1,0 +1,15 @@
+.display {
+  margin-top: 3rem;
+
+  .display-screen {
+    background-color: $color-display-bg-1;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    text-align: right;
+  }
+  .display-content {
+    font-size: 2.8rem;
+    color: $color-display-font-1;
+    margin-right: 5px;
+  }
+}

@@ -1,7 +1,10 @@
-.app-container{
-    width: 100%;
-    max-width: 37.5rem;
-    padding: 2rem;
-    margin: auto;
-}
+.app-container {
+  width: 100%;
+  max-width: 37.5rem;
+  padding: 2rem;
+  margin: auto;
 
+  @include respond(desktop) {
+    max-width: 60rem;
+  }
+}

@@ -1,15 +1,15 @@
-// Variables 
+// Variables
 // Theme 1
 $color-main-bg-1: #3a4764;
 $color-keypad-bg-1: #232c43;
 $color-display-bg-1: #182034;
 // buttons
-$color-reset-del-bg-1: #637097;
-$color-blue-shadow-1: #404e72;
+$color-res-del-bg-1: #637097;
+$color-res-del-shadow-1: #404e72;
 $color-toggle-equal-1: #d03f2f;
 $color-toggle-equal-shadow-1: #93261a;
 $color-numbtns-1: #eae3dc;
-$color-gray-shadow-1: #b4a597;
+$color-numbtns-shadow-1: #b4a597;
 // text
 $color-numbtns-font-1: #444b5a;
 $color-display-font-1: #ffffff;
@@ -45,21 +45,29 @@ $color-numbtns-font-3: #ffe53d;
 $color-equal-font-3: #1b2428;
 $color-res-del-font-3: #ffffff;
 
-
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color:  hsl(222, 26%, 31%);
-    font-family: 'Spartan', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
 }
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
+}
+
+// responsive breakpoint for screen sizes 380px and below
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 38rem) {
+      @content;
+    }
+  }
 }

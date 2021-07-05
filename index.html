@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-
-</head>
-<body>
-
-  <section class="app-container">
-    <header>
-      <div class="logo-box">
-        <h1 class="logo">
-          calc
-        </h1>
-        <p>Theme</p>
-      </div>
-
-      <div class="toggle-box">
-        <div class="theme-label-box">
-          <label class="theme-label" for="theme-1">1</label>
-          <label class="theme-label" for="theme-2">2</label>
-          <label class="theme-label" for="theme-3">3</label>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <section class="app-container">
+      <header>
+        <div class="logo-box">
+          <h1 class="logo">calc</h1>
+          <p>Theme</p>
         </div>
-        <div class="toggle-btns-box">
-          <input class="pref-btn active" type="radio" name="theme-pref" id="theme-1">
-          <input class="pref-btn hidden" type="radio" name="theme-pref" id="theme-2">
-          <input class="pref-btn hidden" type="radio" name="theme-pref" id="theme-3">
-          <span class="toggle-bg"> </span>
-       </div>
-      </div>
-    </header>
-  </section>
-  
-  <!-- <div class="attribution">
+
+        <div class="toggle-box">
+          <div class="theme-label-box">
+            <label class="theme-label" for="theme-1">1</label>
+            <label class="theme-label" for="theme-2">2</label>
+            <label class="theme-label" for="theme-3">3</label>
+          </div>
+          <div class="toggle-btns-box">
+            <input
+              class="pref-btn active"
+              type="radio"
+              name="theme-pref"
+              id="theme-1"
+            />
+            <input
+              class="pref-btn hidden"
+              type="radio"
+              name="theme-pref"
+              id="theme-2"
+            />
+            <input
+              class="pref-btn hidden"
+              type="radio"
+              name="theme-pref"
+              id="theme-3"
+            />
+            <span class="toggle-bg"> </span>
+          </div>
+        </div>
+      </header>
+
+      <section class="display">
+        <div class="display-screen">
+          <span class="display-content">399,981</span>
+        </div>
+      </section>
+
+      <section class="num-pad">
+        <div class="num-pad-btns">
+          <div class="btnRow">
+            <button class="btn numBtn">7</button>
+            <button class="btn numBtn">8</button>
+            <button class="btn numBtn">9</button>
+            <button class="btn utilBtn" id="del">DEL</button>
+          </div>
+          <div class="btnRow">
+            <button class="btn numBtn">4</button>
+            <button class="btn numBtn">5</button>
+            <button class="btn numBtn">6</button>
+            <button class="btn numBtn utilBtn" id="add">+</button>
+          </div>
+          <div class="btnRow">
+            <button class="btn numBtn">3</button>
+            <button class="btn numBtn">2</button>
+            <button class="btn numBtn">1</button>
+            <button class="btn numBtn utilBtn" id="subtract">-</button>
+          </div>
+          <div class="btnRow">
+            <button class="btn numBtn">.</button>
+            <button class="btn numBtn">0</button>
+            <button class="btn numBtn">/</button>
+            <button class="btn numBtn utilBtn" id="multiply">X</button>
+          </div>
+          <div class="btnRow">
+            <button class="btn btn-wide utilBtn" id="reset">RESET</button>
+            <button class="btn btn-wide utilBtn" id="equal">=</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Sorge Forge Studio</a>.
   </div> -->
-</body>
+  </body>
 </html>
